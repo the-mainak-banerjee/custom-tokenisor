@@ -82,7 +82,12 @@ const inputText = document.getElementById("inputText");
 const outputText = document.getElementById("outputText");
 const tokenizeButton = document.getElementById("tokenizeButton");
 
+console.log(
+  "Welcome to the GPT Tokenizer! Enter text to see how it tokenizes words and characters."
+);
+
 tokenizeButton.addEventListener("click", async () => {
+  console.log("clicked");
   const text = inputText.value;
   if (!text) {
     outputText.value = "Please enter some text to convert.";
