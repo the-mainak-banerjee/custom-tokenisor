@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokenisor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Tokenisor</h1>
+      <p>
+        Tokenisor is a tool to tokenize text using custom tokenization
+        algorithms.
+      </p>
+    </header>
+    <main class="main">
+      <div class="input-section">
+        <label class="section-header" for="inputText"
+          >Enter text to tokenize:</label
+        >
+        <input
+          type="text"
+          id="inputText"
+          placeholder="Enter text to tokenize"
+        />
+        <button id="tokenizeButton">Tokenize</button>
+      </div>
+      <div class="output-section">
+        <p class="section-header">Tokenized Output:</p>
+        <textarea id="outputText" rows="10" cols="50" readonly></textarea>
+        <pre id="output"></pre>
+      </div>
+    </main>
+
+    <script src="./app.js" />
+  </body>
+</html>
